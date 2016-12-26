@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+	<div class ="navigation">
+		<div class ="navasya" >
+			Asya Sukhorukova
+		</div>
+
+		<a href="index.html" style="color:white">
+			<div class = "navindex">
+				Index
+			</div>
+		</a>
+		
+		<a href="about.html" style="color:white">
+			<div class = "navabout" >
+				about
+			</div>
+		</a>
+
+		<a href="contact.html" style="color:white">
+			<div class = "navcontact">
+				contact
+			</div>
+		</a>
+
+		<p class ="medium scroll" style = "color:white">
+			scroll ->
+		</p>
+		<div class = "navline">
+		</div>
+
+		<div class="preline" >
+
+		</div>
+		<div class ="arrow">
+
+	</div>
+<p class="description" >
+	Paperback Ulysses<br>
+	book<br>
+	2016
+</p>
+	<p class="description1" style="display:none">I am Allowed to Make Notes<br>
+		magazine, posters<br>
+		2015</p>
+		<p class="description2" style="display:none">ABCD (Audio Based Contextualizing Domain)<br>
+			installation, audio, publication<br>
+			2015</p>
+			<p class="description3" style="display:none">yo</p>
+				<p class="description4" style="display:none">lala</p>
+
+
+	</div>	
+<div class = "popost">	
+<div class="post">
+
+		</div>
+		
+		<div class="post">
+			<div class = "ulysses1">
+				<a href="ulysses.html">
+					<img src="styles/img/small/ulysses1.jpg" >
+				</a>
+			</div>
+		</div>
+		
+		<div class="post">
+			<div class = "ulysses2">
+				<img src="styles/img/small/notes.jpg">
+
+			</div>
+		</div>
+		
+		<div class="post">
+			<div class = "ulysses3">
+				<img src="styles/img/small/wall7.jpg">
+
+			</div>
+		</div>
+		
+		<div class="post">
+			<div class = "ulysses4">
+				<img src="styles/img/small/ulysses1.jpg">
+
+			</div>
+		</div>
+		
+		<div class="post">
+			<div class = "ulysses5">
+				<img src="styles/img/small/ulysses1.jpg">
+
+			</div>
+		</div>
+	
+
+</div>
+</div>
+
+
+	<script src="jquery/jquery.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script>
+
+$(document).scroll(function () {
+    var y = $(this).scrollLeft();
+    console.log(y);
+    if ((y > -1) && (y < 1000)) {
+        $('.description').fadeIn("fast");
+    } else {
+        $('.description').fadeOut("fast");
+    }
+
+
+});
+$(document).scroll(function () {
+    var y = $(this).scrollLeft();
+    if ((y > 1126) && (y < 1919)) {
+        $('.description1').fadeIn("fast");
+    } else {
+        $('.description1').fadeOut("fast");
+    }
+
+
+});
+$(document).scroll(function () {
+    var y = $(this).scrollLeft();
+    if ((y > 2658) && (y < 4029)) {
+        $('.description2').fadeIn("fast");
+    } else {
+        $('.description2').fadeOut("fast");
+    }
+
+
+});
+$(document).scroll(function () {
+    var y = $(this).scrollLeft();
+    if ((y > 4240) && (y < 5780)) {
+        $('.description3').fadeIn("fast");
+    } else {
+        $('.description3').fadeOut("fast");
+    }
+
+
+});
+$(document).scroll(function () {
+    var y = $(this).scrollLeft();
+    if ((y > 5957) && (y < 10000)) {
+        $('.description4').fadeIn("fast");
+    } else {
+        $('.description4').fadeOut("fast");
+    }
+
+
+});
+
+
+	$(function(){
+		$(".preline").wrapInner("<table cellspacing='30'><tr>");
+		$(".post").wrap("<td></td>");
+		$("body").mousewheel(function(event, delta) {
+			this.scrollLeft -= (delta * 30);
+			event.preventDefault();
+		});   
+	});
+
+		</script>
+
+</body>
+</html>
