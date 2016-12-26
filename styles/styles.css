@@ -1,0 +1,229 @@
+body{
+	background-color: blue;
+}
+
+.navigation{
+	
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	font-size: 20px;
+	height: 100%;
+	width:100%;
+	position:fixed;
+
+}
+.navasya{
+position: absolute;
+top: 65%;
+left:1%;}
+.navindex{
+	position: absolute;
+	top: 10%;
+	left:50%;
+}
+.navabout{
+	position: absolute;
+	top: 10%;
+	left:30%;
+}
+.navcontact{
+	position: absolute;
+	top: 10%;
+	left:70%;
+}
+.scroll{
+	position: absolute;
+	top:10%;
+	left: 90%;
+}
+.navline, .preline{
+	width:104%;
+	height:2px;
+	position: absolute;
+	right:5px;
+	background-color: white;
+}
+.navline{
+		top:10%;
+}
+.preline{
+	top:65%;
+
+
+}
+
+.popost{
+	position: absolute;
+	top: 50%;
+}
+.ulysses1,.ulysses2,.ulysses3,.ulysses4,.ulysses5{
+
+position: relative;
+margin-right: 600px;
+margin-left: 700px;
+padding-bottom: 250px;
+
+	
+
+}
+.description, .description1,.description2,.description3,.description4{
+	position: absolute;
+	left:50%;
+	top:20%;
+}
+.photos img{
+max-width: 70%;
+height: auto;
+padding: 25px 25px 25px 25px;
+position: relative;
+
+}
+.fulldescription{
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	position: absolute;
+	width: 24%;
+	height: auto;
+	right: 0%;
+	bottom: 0%;
+	margin: 25px 25px 25px 25px;
+	z-index: 20000;
+
+	
+}
+.contact{
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	position: absolute;
+	width: 24%;
+	height: auto;
+	right: 50%;
+	bottom: 50%;
+	margin: 25px 25px 25px 25px;
+	z-index: 20000;
+}
+.fulldescription.affix{
+
+	position: fixed;
+	width: 24%;
+	height: auto;
+	right: 0%;
+	top: 0%;
+	margin: 25px 25px 25px 25px;
+	z-index: 20000;
+
+
+   
+}
+.nametag,.next,.previous{
+	position:fixed;
+	z-index:30000;
+	max-width: 50%;
+	border-style: solid;
+	color: blue;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	background-color: white;
+	height:auto;
+	padding:5px 5px 5px 5px;
+	margin: 25px 25px 25px 25px;
+	
+
+}
+.nametag{
+	left:10%;
+}
+.back{
+	position:fixed;
+	z-index:30000;
+	max-width: 50%;
+	border-style: solid;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	background-color: blue;
+	height:auto;
+	padding:5px 5px 5px 5px;
+	margin: 25px 25px 25px 25px;
+	top:1%;
+}
+.previous{
+	bottom:0%;
+	
+
+}
+.next{
+	right:0%;
+	bottom:0%;
+	
+}
+.medium{
+	font-family: 'Roboto Mono', monospace;
+	font-size: 12px;
+	
+	padding-bottom: 20px;
+}
+.vertical{
+	position: absolute;
+	max-width: 70%;
+	right:10%;
+	padding: 25px 25px 25px 25px;
+
+}
+/*.fulldescription{
+font-size: 18px;
+}*/
+
+#indexnotes:hover  {
+	color: black
+}
+#note,#band,#bauhaus,#wall {
+	top:10%;
+	position: fixed;
+	display: none;
+}
+.indexnames{
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-span: all; /* Chrome, Safari, Opera */
+    column-span: all;
+    font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	position: absolute;
+	width: 70%;
+
+/*	background-color: yellow;*/
+	height: auto;
+	right: 0%;
+	bottom: 0%;
+	margin: 25px 25px 25px 25px;
+	z-index: 20000;
+	
+
+
+}
+a{
+	text-decoration:none
+}
+.smaller img{
+	max-width: 50%;
+	position: relative;
+	padding-left: 200px;
+}
+
+.projectlink {
+	width: 200px;
+	height: auto;
+	display: block;
+	background: red;
+
+}
+.smallerposters img{
+	max-height: 90%;
+	width:auto;
+	left:10%;
+}
+.smallerposters {
+max-width: 70%;
+}
