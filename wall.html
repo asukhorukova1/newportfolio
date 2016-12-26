@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<style>
+body {background-color: white;
+color: blue;}
+
+</style>
+</head>
+<body>
+<div class = "buttons">
+	<div class ="nametag">
+		ABCD
+	</div>
+	<a href="portfolio.html">
+		<div class ="back">
+				<-main page
+		</div>
+	</a>
+	<a href = "beyonce.html">
+		<div class ="next">
+			next project->
+		</div>
+	</a>
+	<a href ="notes.html">
+		<div class ="previous">
+				<-previous project
+		</div>
+	</a>
+</div>
+	<div class="photos">
+		<div class ="smaller">
+		<img src="styles/img/wall.gif">
+    </div>
+		<img src="styles/img/wall4.jpg">
+		<img src="styles/img/wall5.jpg">
+		<img src="styles/img/wall6.jpg">
+		<img src="styles/img/wall7.jpg">
+		<img src="styles/img/wall8.jpg">
+		<img src="styles/img/wall9.jpg">
+		<img src="styles/img/wall10.jpg">
+		<img src="styles/img/abcdpublication1.jpg">
+		<img src="styles/img/abcdpublication2.jpg">
+		<img src="styles/img/abcdpublication3.jpg">
+		<img src="styles/img/abcdpublication4.jpg">
+		<img src="styles/img/abcdpublication5.jpg">
+		<img src="styles/img/abcdpublication6.jpg">
+		<img src="styles/img/abcdpublication7.jpg">
+		<img src="styles/img/abcdpublication8.jpg">
+		<img src="styles/img/abcdpublication10.jpg">
+		<img src="styles/img/abcdpublication11.jpg">
+		<img src="styles/img/abcdpublication12.jpg">
+		<img src="styles/img/abcdpublication13.jpg">
+
+
+
+
+
+	</div>
+	<div class="fulldescription">
+		<p class="medium">
+			year: 2016 <br>
+			medium: book <br>
+			paper, cardboard, digital print, rubber band
+
+		</p>
+		/in collaboration with Rudi van Delden/<br>
+An installation at the Fokker Terminal during a conference of the Dutch Ministry of Culture and Education.
+ABCD is an independent research experiment focused on rediscovering the phenomenon of spatial orientation and the relationship between humans and their surroundings on a psychological level. By gathering voice recordings and personal data from the visitors, on the spot, we created a wall that articulates the perception of the space through the 
+senses of 45 different participants. In the ABCD data report we gathered all the data of the walk-in recruitment and made some good looking graphs.
+	</div>
+<script src="jquery/jquery.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script>
+
+var sticky = $('.fulldescription').offset().top;
+
+$(window).scroll(function() {  
+	var y = $(this).scrollTop();
+    if ($(window).scrollTop() > (sticky-140)) {
+        $('.fulldescription').addClass('affix');
+
+    }
+    else {
+        $('.fulldescription').removeClass('affix');
+    }  
+
+});
+// $(document).scroll(function () {
+//     var y = $(this).scrollTop();
+//     console.log(y);
+//     if (y > 700) {
+//         $('.buttons').fadeOut("fast");
+//     } else {
+//         $('.buttons').fadeIn("fast");
+//     }
+
+
+// });
+</script>
+
+
+</body>
+</html>

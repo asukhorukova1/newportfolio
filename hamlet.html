@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<style>
+body {background-color: white;
+color: blue;}
+
+</style>
+</head>
+<body>
+<div class = "buttons">
+	<div class ="nametag">
+		Hamlet Synchronized
+	</div>
+	<a href="portfolio.html">
+		<div class ="back">
+				<-main page
+		</div>
+	</a>
+	<a href="color.html">
+		<div class ="next">
+			next project->
+		</div>
+	</a>
+	<a href ="beyonce.html">
+		<div class ="previous">
+				<-previous project
+		</div>
+	</a>
+</div>
+	<div class="photos">
+		<img src="styles/img/hamlet1.png">
+		<img src="styles/img/hamlet2.png">
+		<img src="styles/img/hamlet3.png">
+
+
+
+	</div>
+	<div class="fulldescription">
+		<p class="medium">
+			year: 2016 <br>
+			medium: web<br>
+			Html, CSS, JavaScript
+
+		</p>
+		Investigating the experience of reading digital text, I decided to use JavaScript to synchronize two scripts, the original Shakespeare’s «Hamlet» and Stoppard’s «Rosencrantz and Guildenstern are Dead». The plays are written with a gap of 500 years, however the plots are taking place at the same time, showing two different perspectives on the same characters and situations. The website combines both texts, with the scrolling features adjusted, so the scripts are constantly synchronized within the time frame of the events. The description of characters also becomes interactive, and hovering on a name, the reader can observe how each protagonist is marked in both texts.
+
+	<br>
+	<br>
+	<a href="hamlet/2plays.html">
+	webste link</a>
+<script src="jquery/jquery.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script>
+
+var sticky = $('.fulldescription').offset().top;
+
+$(window).scroll(function() {  
+	var y = $(this).scrollTop();
+    if ($(window).scrollTop() > (sticky-140)) {
+        $('.fulldescription').addClass('affix');
+
+    }
+    else {
+        $('.fulldescription').removeClass('affix');
+    }  
+
+});
+// $(document).scroll(function () {
+//     var y = $(this).scrollTop();
+//     console.log(y);
+//     if (y > 700) {
+//         $('.buttons').fadeOut("fast");
+//     } else {
+//         $('.buttons').fadeIn("fast");
+//     }
+
+
+// });
+</script>
+
+
+</body>
+</html>

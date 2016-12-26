@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<style>
+body {background-color: white;
+color: blue;}
+
+</style>
+</head>
+<body>
+<div class = "buttons">
+	<div class ="nametag">
+		Frankenstein Project
+	</div>
+	<a href="portfolio.html">
+		<div class ="back">
+				<-main page
+		</div>
+	</a>
+	<a href="panorama.html">
+		<div class ="next">
+			next project->
+		</div>
+	</a>
+	<a href ="hamlet.html">
+		<div class ="previous">
+				<-previous project
+		</div>
+	</a>
+</div>
+	<div class="photos">
+		<img src="styles/img/frankensteinexhibition.jpg">
+		<img src="styles/img/frankensteinexhibition1.png">
+		<img src="styles/img/frankensteinposter.jpg">
+		<img src="styles/img/frankensteinpublicaiton1.jpg">
+		<img src="styles/img/frankensteinpublicaiton2.jpg">
+		<img src="styles/img/frankensteinpublicaiton3.jpg">
+		<img src="styles/img/frankensteinpublicaiton4.jpg">
+
+
+
+
+
+
+
+	</div>
+	<div class="fulldescription">
+		<p class="medium">
+			year: 2016 <br>
+			medium: web<br>
+			Html, CSS, JavaScript
+
+		</p>
+		Frankestein Project is aimed at me, as well as at everyone else. The whole exhibition started out with a thought about behavioural mimicry that might be the main thing that shapes our appearence as individuals, and to certain extent determines our facial expressions, our way of talking, laughing, smiling, crying, anything, whether it's a facial, verbal or body language. I was often told I sound like my closest friends. Then what if all that makes me ME is actually a complex construct of tiny features taken from other people I've encountered throughout my life? <br>
+		The research lead me through fields of psychology, anthropology, sociology, neuro sciences, history and many others. Not being able to pick one anchor, I ended up creating an archive of all the gathered information on what makes one appear unique next to the rest. In order to apply the collected research to myself, I've been making a little art experiment on particular topics every week. The archive, then, transformed both into a mobile exhibition and a publication.<br>
+		The working process was kindly documented by Taya Reshetnik and resulted as a short film.
+
+<script src="jquery/jquery.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script>
+
+var sticky = $('.fulldescription').offset().top;
+
+$(window).scroll(function() {  
+	var y = $(this).scrollTop();
+    if ($(window).scrollTop() > (sticky-140)) {
+        $('.fulldescription').addClass('affix');
+
+    }
+    else {
+        $('.fulldescription').removeClass('affix');
+    }  
+
+});
+// $(document).scroll(function () {
+//     var y = $(this).scrollTop();
+//     console.log(y);
+//     if (y > 700) {
+//         $('.buttons').fadeOut("fast");
+//     } else {
+//         $('.buttons').fadeIn("fast");
+//     }
+
+
+// });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<style>
+body {background-color: white;
+color: blue;}
+
+</style>
+</head>
+<body>
+<div class = "buttons">
+	<div class ="nametag">
+		Imaginary Imagery: Eyes & Screens
+	</div>
+	<a href="portfolio.html">
+		<div class ="back">
+				<-main page
+		</div>
+	</a>
+	<a href="frank.html">
+		<div class ="next">
+			next project->
+		</div>
+	</a>
+	<a href ="conversation.html">
+		<div class ="previous">
+				<-previous project
+		</div>
+	</a>
+</div>
+	<div class="photos">
+		<img src="styles/img/color1.jpg">
+		<img src="styles/img/color2.jpg">
+		<img src="styles/img/color3.jpg">
+		<img src="styles/img/color4.jpg">
+		<img src="styles/img/color5.jpg">
+		<img src="styles/img/color6.jpg">
+		<img src="styles/img/color7.jpg">
+		<img src="styles/img/color8.jpg">
+		<img src="styles/img/color9.jpg">
+		<img src="styles/img/color10.jpg">
+		<img src="styles/img/color11.jpg">
+		<img src="styles/img/color12.jpg">
+		<img src="styles/img/color13.jpg">
+		<img src="styles/img/color14.jpg">
+		<img src="styles/img/color15.jpg">
+		<img src="styles/img/color16.jpg">
+		<img src="styles/img/color17.jpg">
+		<img src="styles/img/color18.jpg">
+		<img src="styles/img/color19.jpg">
+		<img src="styles/img/color20.jpg">
+		<img src="styles/img/color21.jpg">
+		<img src="styles/img/color22.jpg">
+
+
+
+
+
+
+	</div>
+	<div class="fulldescription">
+		<p class="medium">
+			year: 2016 <br>
+			medium: web<br>
+			Html, CSS, JavaScript
+
+		</p>
+		The publication summed up the small personal exhibition which theme was the nature of digital image and thus of digital color and pixels. In order to reveal a screen rather as a tangible object than a mysterious media I created a series of physical objects representing such processes as digital decay, optical illussion of color and traces of unique identity behind different screens. 
+<script src="jquery/jquery.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script>
+
+var sticky = $('.fulldescription').offset().top;
+
+$(window).scroll(function() {  
+	var y = $(this).scrollTop();
+    if ($(window).scrollTop() > (sticky-140)) {
+        $('.fulldescription').addClass('affix');
+
+    }
+    else {
+        $('.fulldescription').removeClass('affix');
+    }  
+
+});
+// $(document).scroll(function () {
+//     var y = $(this).scrollTop();
+//     console.log(y);
+//     if (y > 700) {
+//         $('.buttons').fadeOut("fast");
+//     } else {
+//         $('.buttons').fadeIn("fast");
+//     }
+
+
+// });
+</script>
+
+
+</body>
+</html>

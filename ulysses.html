@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<style>
+body {background-color: white;
+color: blue;}
+
+</style>
+</head>
+<body>
+<div class = "buttons">
+	<div class ="nametag">
+		Paperback Ulysses
+	</div>
+	<a href="portfolio.html">
+		<div class ="back">
+				<-main page
+		</div>
+	</a>
+	<a href ="notes.html">
+		<div class ="next">
+			next project->
+		</div>
+	<a>
+	<div class ="previous">
+			<-previous project
+	</div>
+</div>
+	<div class="photos">
+		<img src="styles/img/ulysses1.jpg">
+		<img src="styles/img/ulysses2.jpg">
+		<img src="styles/img/ulysses3.jpg">
+		<img src="styles/img/ulysses4.jpg">
+		<img src="styles/img/ulysses5.jpg">
+		<div class="smaller">
+			<img src="styles/img/ulysses6.jpg">
+		</div>
+		<img src="styles/img/ulysses7.jpg">
+		<img src="styles/img/ulysses8.jpg">
+		<img src="styles/img/ulysses9.jpg">
+		<img src="styles/img/ulysses10.jpg">
+	</div>
+	<div class="fulldescription">
+		<p class="medium">
+			year: 2016 <br>
+			medium: book <br>
+			paper, cardboard, digital print, rubber band
+
+		</p>
+		The project was an attempt to come up with a cheap and handy solution to publish massive books such as James Joyce’s Ulysses, as well as to create an easily readable layout system for the particular piece.  The outcome consists of 18 separate publications (chapters), which are held together with the spine that also functions as table of contents. Such binding is one of the easiest and cheapest in production, as it’s all put together with a simple rubber band, and makes the book transportable, which is the main advantage of a paperback in general.
+	</div>
+<script src="jquery/jquery.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script>
+
+var sticky = $('.fulldescription').offset().top;
+
+$(window).scroll(function() {  
+	var y = $(this).scrollTop();
+    if ($(window).scrollTop() > (sticky-140)) {
+        $('.fulldescription').addClass('affix');
+
+    }
+    else {
+        $('.fulldescription').removeClass('affix');
+    }  
+
+});
+// $(document).scroll(function () {
+//     var y = $(this).scrollTop();
+//     console.log(y);
+//     if (y > 700) {
+//         $('.buttons').fadeOut("fast");
+//     } else {
+//         $('.buttons').fadeIn("fast");
+//     }
+
+
+// });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<style>
+body {background-color: white;
+color: blue;}
+
+</style>
+</head>
+<body>
+<div class = "buttons">
+	<div class ="nametag">
+		How to Always Win
+	</div>
+	<a href="portfolio.html">
+		<div class ="back">
+				<-main page
+		</div>
+	</a>
+	<a href="ineedto.html">
+		<div class ="next">
+			next project->
+		</div>
+	</a>
+	<a href ="bauhaus.html">
+		<div class ="previous">
+				<-previous project
+		</div>
+	</a>
+</div>
+	<div class="photos">
+
+		<img src="styles/img/comp1.jpg">
+		<img src="styles/img/comp2.jpg">
+		<img src="styles/img/comp3.jpg">
+		<img src="styles/img/comp4.jpg">
+		<img src="styles/img/comp5.jpg">
+		<img src="styles/img/comp6.jpg">
+		<img src="styles/img/comp7.jpg">
+		
+		<img src="styles/img/comp9.jpg">
+		<img src="styles/img/comp10.jpg">
+		<img src="styles/img/comp11.jpg">
+	
+
+
+
+
+
+
+
+
+
+
+	</div>
+	<div class="fulldescription">
+		<p class="medium">
+			year: 2016 <br>
+			medium: web<br>
+			Html, CSS, JavaScript
+
+		</p>
+		How to Always Win is a publication based on brainstorm sessions held  together with my classmates in the Royal Academy. The goal of those meetings was to design a public event, a strategy that would provoke competitive behaviour of participants and at the same time reflect different stages of design process. Each spread of the publication presents a new strategy together with its analisys, and highlights different sides of competition sense.
+
+<script src="jquery/jquery.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script>
+
+var sticky = $('.fulldescription').offset().top;
+
+$(window).scroll(function() {  
+	var y = $(this).scrollTop();
+    if ($(window).scrollTop() > (sticky-140)) {
+        $('.fulldescription').addClass('affix');
+
+    }
+    else {
+        $('.fulldescription').removeClass('affix');
+    }  
+
+});
+// $(document).scroll(function () {
+//     var y = $(this).scrollTop();
+//     console.log(y);
+//     if (y > 700) {
+//         $('.buttons').fadeOut("fast");
+//     } else {
+//         $('.buttons').fadeIn("fast");
+//     }
+
+
+// });
+</script>
+
+
+</body>
+</html>

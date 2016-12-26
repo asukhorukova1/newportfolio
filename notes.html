@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<style>
+body {background-color: white;
+color: blue;}
+
+</style>
+</head>
+<body>
+<div class = "buttons">
+	<div class ="nametag">
+		I Am Allowed to Make Notes
+	</div>
+	<a href="portfolio.html">
+		<div class ="back">
+				<-main page
+		</div>
+	</a>
+	<a href="wall.html">
+		<div class ="next">
+			next project->
+		</div>
+	</a>
+	<a href ="ulysses.html">
+		<div class ="previous">
+				<-previous project
+		</div>
+	</a>
+</div>
+	<div class="photos">
+		<img src="styles/img/notes.jpg">
+		<img src="styles/img/notes2.jpg">
+		<img src="styles/img/notes3.jpg">
+		<img src="styles/img/notes4.jpg">
+
+		<img src="styles/img/notes6.jpg">
+		<img src="styles/img/notes7.jpg">
+		<img src="styles/img/notes8.jpg">
+
+
+	</div>
+	<div class="fulldescription">
+		<p class="medium">
+			year: 2016 <br>
+			medium: book <br>
+			paper, cardboard, digital print, rubber band
+
+		</p>
+		I am Allowed to Make Notes is a one-issue (yet) magazine, created to celebrate the gallery of windowsills of The Hague. The culture of putting random (or not so) objects on display and attracting strangers’ eyes to your private life makes a peculiar paradox together with the law against taking pictures of private windows. After I attempted to take a photograph of one of the objects (that someone's put out there for me to look!), I ended up being stopped by a policeman, and after that the project turned into a collection of descriptive texts, which are perfectly legal and give me a chance to share what The Hague has shown me.
+	</div>
+<script src="jquery/jquery.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script>
+
+var sticky = $('.fulldescription').offset().top;
+
+$(window).scroll(function() {  
+	var y = $(this).scrollTop();
+    if ($(window).scrollTop() > (sticky-140)) {
+        $('.fulldescription').addClass('affix');
+
+    }
+    else {
+        $('.fulldescription').removeClass('affix');
+    }  
+
+});
+// $(document).scroll(function () {
+//     var y = $(this).scrollTop();
+//     console.log(y);
+//     if (y > 700) {
+//         $('.buttons').fadeOut("fast");
+//     } else {
+//         $('.buttons').fadeIn("fast");
+//     }
+
+
+// });
+</script>
+
+
+</body>
+</html>

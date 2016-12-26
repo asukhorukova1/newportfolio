@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<style>
+body {background-color: white;
+color: blue;}
+
+</style>
+</head>
+<body>
+<div class = "buttons">
+	<div class ="nametag">
+		It's a Dialogue:
+		graphic conversations with CaptionBot
+	</div>
+	<a href="portfolio.html">
+		<div class ="back">
+				<-main page
+		</div>
+	</a>
+	<a href="hamlet.html">
+		<div class ="next">
+			next project->
+		</div>
+	</a>
+	<a href ="beyonce.html">
+		<div class ="previous">
+				<-previous project
+		</div>
+	</a>
+</div>
+	<div class="photos">
+		<img src="styles/img/captionbot1.jpg">
+		<img src="styles/img/captionbot2.jpg">
+		<img src="styles/img/captionbot3.jpg">
+		<img src="styles/img/captionbot4.jpg">
+		<img src="styles/img/captionbot5.jpg">
+		<img src="styles/img/captionbot6.jpg">
+		<img src="styles/img/captionbot7.jpg">
+		<img src="styles/img/captionbot8.jpg">
+		<img src="styles/img/captionbot9.jpg">
+		<img src="styles/img/captionbot10.jpg">
+
+
+	</div>
+	<div class="fulldescription">
+		<p class="medium">
+			year: 2016 <br>
+			medium: digital tool, drawing<br>
+			Processing, digital print
+
+		</p>
+		Rounding up these series of generating and interpreting digital drawing, I made a flip book that presents my long-lasting miscommunication with CaptionBot. Although the algorythm is based on a huge image library and seems to be able to recognise a photographic image almost as well as I would, it ends up completely helpless in front of a drawing. The dialogue followed a set of simple rules:<br><br> 1. I give a code-generated drawing to CaptionBot as a starting point<br>2. I receive a new title as a response<br>3. I take the same drawing and draw what CaptionBot told me on top of it<br>4. We do the circle all over again<br>5. And again
+<script src="jquery/jquery.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script>
+
+var sticky = $('.fulldescription').offset().top;
+
+$(window).scroll(function() {  
+	var y = $(this).scrollTop();
+    if ($(window).scrollTop() > (sticky-140)) {
+        $('.fulldescription').addClass('affix');
+
+    }
+    else {
+        $('.fulldescription').removeClass('affix');
+    }  
+
+});
+// $(document).scroll(function () {
+//     var y = $(this).scrollTop();
+//     console.log(y);
+//     if (y > 700) {
+//         $('.buttons').fadeOut("fast");
+//     } else {
+//         $('.buttons').fadeIn("fast");
+//     }
+
+
+// });
+</script>
+
+
+</body>
+</html>

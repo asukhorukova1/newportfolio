@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<style>
+body {background-color: white;
+color: blue;}
+
+</style>
+</head>
+<body>
+<div class = "buttons">
+	<div class ="nametag">
+		Exposing Periphery
+	</div>
+	<a href="portfolio.html">
+		<div class ="back">
+				<-main page
+		</div>
+	</a>
+	<a href="bauhaus.html">
+		<div class ="next">
+			next project->
+		</div>
+	</a>
+	<a href ="band.html">
+		<div class ="previous">
+				<-previous project
+		</div>
+	</a>
+</div>
+	<div class="photos">
+		<img src="styles/img/peripherypublication1.jpg">
+		<img src="styles/img/periphery2.jpg">
+		<img src="styles/img/periphery1.jpg">
+
+
+
+
+
+
+
+
+
+	</div>
+	<div class="fulldescription">
+		<p class="medium">
+			year: 2016 <br>
+			medium: web<br>
+			Html, CSS, JavaScript
+
+		</p>
+		Being interested in how reading & writing experiences shifted in the digital era, in collaboration with Tatiana Ermolaeva, I created two digital writing tools  in Java and JavaScript, that aimed at changing the principles of writing that we’re used to. The first tool is connected to a database of synonims, and creates an alternative text as you type, selecting a random synonim for each word. The second tool is developed to keep track of everything that is being deleted while writing, and to gather it as a separate piece of text. With the help of these self-made softwares, I wrote a short essay on the psychological impact that digital world has on humans, and the new wave of evolution of perception that follows.
+
+<script src="jquery/jquery.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script>
+
+var sticky = $('.fulldescription').offset().top;
+
+$(window).scroll(function() {  
+	var y = $(this).scrollTop();
+    if ($(window).scrollTop() > (sticky-140)) {
+        $('.fulldescription').addClass('affix');
+
+    }
+    else {
+        $('.fulldescription').removeClass('affix');
+    }  
+
+});
+// $(document).scroll(function () {
+//     var y = $(this).scrollTop();
+//     console.log(y);
+//     if (y > 700) {
+//         $('.buttons').fadeOut("fast");
+//     } else {
+//         $('.buttons').fadeIn("fast");
+//     }
+
+
+// });
+</script>
+
+
+</body>
+</html>
