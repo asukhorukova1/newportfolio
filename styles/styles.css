@@ -3,7 +3,8 @@ body{
 }
 
 .navigation{
-	
+	-webkit-font-smoothing: subpixel-antialiased;
+
 	font-family: 'Poppins', sans-serif;
 	color: white;
 	font-size: 20px;
