@@ -1,12 +1,10 @@
 body{
 	background-color: blue;
-	-webkit-font-smoothing: subpixel-antialiased;
-	-webkit-transform: translateZ(0px);
+
 }
 
 .navigation{
-	-webkit-font-smoothing: subpixel-antialiased;
-	-webkit-transform: translateZ(0px);
+	
 
 	font-family: 'Poppins', sans-serif;
 	font-weight:light;
