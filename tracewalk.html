@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<style>
+body {background-color: white;
+color: blue;}
+
+</style>
+</head>
+<body>
+<div class = "buttons">
+	<div class ="nametag">
+		Tracewalk Notes
+	</div>
+	<a href="portfolio.html">
+		<div class ="back">
+				<-main page
+		</div>
+	</a>
+	<a href="periphery.html">
+		<div class ="next">
+			next project->
+		</div>
+	</a>
+	<a href ="panorama.html">
+		<div class ="previous">
+				<-previous project
+		</div>
+	</a>
+</div>
+	<div class="photos">
+		<iframe class ="embedvideo" width="70%" height="100%" style = "min-height:80%"
+src="https://www.youtube.com/embed/QHl4MA0xkaE?autoplay=1" frameborder="0" allowfullscreen>
+</iframe>
+
+		<div class = "smaller" >
+			<!-- <img src="styles/img/band2.png"> -->
+			<img  src="styles/img/tracewalktry4.jpg" style ="max-height:100%; left:15%">
+		</div>
+
+
+
+
+
+
+
+
+	</div>
+	<div class="fulldescription">
+		<p class="medium">
+			year: 2016 <br>
+			medium: short film, poster<br>
+			Adobe Premiere Pro, InDesign, Photoshop
+
+		</p>
+		Tracewalking is about to become an important skill in the nearest postapocaliptic future, when the humanity is left with knowledge that is no longer applicable to reality, but becomes the only valid currency and circulates inside and among tribes.
+
+
+
+<script src="jquery/jquery.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script>
+
+var sticky = $('.fulldescription').offset().top;
+
+$(window).scroll(function() {  
+	var y = $(this).scrollTop();
+    if ($(window).scrollTop() > (sticky-140)) {
+        $('.fulldescription').addClass('affix');
+
+    }
+    else {
+        $('.fulldescription').removeClass('affix');
+    }  
+
+});
+// $(document).scroll(function () {
+//     var y = $(this).scrollTop();
+//     console.log(y);
+//     if (y > 700) {
+//         $('.buttons').fadeOut("fast");
+//     } else {
+//         $('.buttons').fadeIn("fast");
+//     }
+
+
+// });
+</script>
+
+
+</body>
+</html>
