@@ -200,7 +200,19 @@
 				<img src="styles/colorsmall.jpg">
 
 			</div>
-		</div>		
+		</div>	
+		<div class="post">
+			<div class = "ulysses10">
+				<img src="styles/frankensteinexhibitionsmall.jpg">
+
+			</div>
+		</div>	
+		<div class="post">
+			<div class = "ulysses10">
+				<img src="styles/panoramasmall.jpg">
+
+			</div>
+		</div>	
 
 </div>
 </div>
@@ -281,7 +293,15 @@
 	    } else {
 		$('.description8').fadeOut("fast");
 	    }
-	});			
+	});	
+	$(document).scroll(function () {
+	    var y = $(this).scrollLeft();
+	    if ((y > 12642) && (y < 100000)) {
+		$('.description9').fadeIn("fast");
+	    } else {
+		$('.description9').fadeOut("fast");
+	    }
+	});
 			
 			
 			
