@@ -213,10 +213,14 @@ font-size: 18px;
 
 	z-index: 20000;
 
-	
-
-
 }
+ .indexnames > p:first-child {
+      margin: 0;
+    }
+
+
+
+
 a{
 	text-decoration:none
 }
