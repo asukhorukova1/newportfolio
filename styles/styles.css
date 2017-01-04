@@ -238,3 +238,6 @@ a{
 .smallerposters {
 max-width: 70%;
 }
+.maindescr{
+	font-family: 'Roboto Mono', monospace;
+}
