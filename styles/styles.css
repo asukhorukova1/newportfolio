@@ -240,5 +240,6 @@ max-width: 70%;
 }
 .maindescr{
 	font-family: 'Roboto Mono', monospace;
-	padding-top: 25px;
+	padding-top: 35px;
+	font-size: 20px;
 }
