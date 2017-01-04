@@ -207,7 +207,7 @@ font-size: 18px;
 /*	background-color: yellow;*/
 	height: 100%;
 	right: 0%;
-	bottom: 0%;
+	top: 20%;
 	margin: 25px 25px 25px 25px;
 	z-index: 20000;
 	
