@@ -211,6 +211,10 @@ font-size: 18px;
 	padding: 25px 25px 25px 25px;
 	margin: 25px 25px 25px 25px;
 	z-index: 20000;
+	-moz-column-width: 12em;
+-moz-columns: 12em;
+-webkit-columns: 12em;
+columns: 12em;
 	
 
 
