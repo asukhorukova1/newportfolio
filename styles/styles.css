@@ -208,6 +208,7 @@ font-size: 18px;
 /*	background-color: yellow;*/
 	min-height: 100%;
 	right: 0%;
+	padding: 25px 25px 25px 25px;
 	margin: 25px 25px 25px 25px;
 	z-index: 20000;
 	
