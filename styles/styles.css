@@ -194,11 +194,11 @@ font-size: 18px;
 	display: none;
 }
 .indexnames{
-	-webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
-    -webkit-column-span: all; /* Chrome, Safari, Opera */
-    column-span: all;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+/*     -webkit-column-span: all;
+    column-span: all; */
     font-family: 'Poppins', sans-serif;
 	font-size: 16px;
 	position: absolute;
