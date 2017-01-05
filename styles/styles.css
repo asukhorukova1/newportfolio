@@ -212,6 +212,7 @@ font-size: 18px;
 	padding: 5px 25px 10px 25px;
 
 	z-index: 20000;
+	vertical-align: top;
 
 }
  .indexnames > p:first-child {
