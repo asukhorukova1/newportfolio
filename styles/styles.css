@@ -171,7 +171,7 @@ position: relative;
 .medium{
 	font-family: 'Roboto Mono', monospace;
 	font-size: 12px;
-	
+	line-height: 120%;
 	padding-bottom: 15px;
 }
 .vertical{
@@ -213,7 +213,6 @@ font-size: 18px;
 	min-height: 100%;
 	right: 0%;
 	margin-bottom:30px;
-	line-height: 120%;
 	z-index: 20000;
 	vertical-align: top;
 
