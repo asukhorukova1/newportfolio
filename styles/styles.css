@@ -201,21 +201,19 @@ font-size: 18px;
 	font-size: 16px;
 	position:absolute;
 	right: 0%;
+	padding-top:30px;
 }
 .indexnames li{
        -webkit-column-break-inside: avoid;
-          page-break-inside: avoid;
-               break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
 	display:block;
 	width: 70%;
 	max-width: 70%;
-
-/*	background-color: yellow;*/
 	min-height: 100%;
 	right: 0%;
-/* 	padding: 0px 25px 0px 25px; */
 	margin-bottom:30px;
-
+	line-height: 90%;
 	z-index: 20000;
 	vertical-align: top;
 
