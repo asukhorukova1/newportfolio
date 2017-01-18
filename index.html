@@ -35,6 +35,9 @@ color: blue;}
 	<div class="photos" id="wall" >
 		<img src="styles/wallsmall.png">
 	</div>
+	<div class="photos" id="ulysses" >
+		<img src="styles/ulyssessmall.jpg">
+	</div>
 	<ul class="indexnames" style="color:blue">
 		<a href="ulysses.html" style="color:blue">
 			<li id="indexulysses">
@@ -248,6 +251,13 @@ $('#indexwall').hover(function() {
     $('#wall').fadeOut("fast"); 
 });
 });
+$(function() {
+$('#indexulysses').hover(function() { 
+    $('#ulysses').fadeIn("fast"); 
+}, function() { 
+    $('#ulysses').fadeOut("fast"); 
+});
+});			
 // $(document).scroll(function () {
 //     var y = $(this).scrollTop();
 //     console.log(y);
