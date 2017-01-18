@@ -373,7 +373,14 @@ $('#indexineedto').hover(function() {
 }, function() { 
     $('#ineedto').fadeOut("fast"); 
 });
-});				
+});
+$(function() {
+$('#indexsurrogate').hover(function() { 
+    $('#surrogate').fadeIn("fast"); 
+}, function() { 
+    $('#surrogate').fadeOut("fast"); 
+});
+});			
 // $(document).scroll(function () {
 //     var y = $(this).scrollTop();
 //     console.log(y);
