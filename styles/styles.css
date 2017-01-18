@@ -188,7 +188,7 @@ font-size: 18px;
 .indexnames li:hover  {
 	color: black
 }
-#note,#band,#bauhaus,#wall {
+#note,#band,#bauhaus,#wall, #ulysses {
 	top:10%;
 	position: fixed;
 	display: none;
