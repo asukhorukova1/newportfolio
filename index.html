@@ -380,7 +380,14 @@ $('#indexsurrogate').hover(function() {
 }, function() { 
     $('#surrogate').fadeOut("fast"); 
 });
-});			
+});	
+$(function() {
+$('#indexcomp').hover(function() { 
+    $('#comp').fadeIn("fast"); 
+}, function() { 
+    $('#comp').fadeOut("fast"); 
+});
+});	
 // $(document).scroll(function () {
 //     var y = $(this).scrollTop();
 //     console.log(y);
