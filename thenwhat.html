@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<style>
+body {background-color: white;
+color: blue;}
+
+</style>
+</head>
+<body>
+<div class = "buttons">
+	<div class ="nametag">
+		Then What?
+	</div>
+	<a href="portfolio.html">
+		<div class ="back">
+				<-main page
+		</div>
+	</a>
+	<a href="wall.html">
+		<div class ="next">
+			next project->
+		</div>
+	</a>
+	<a href ="ulysses.html">
+		<div class ="previous">
+				<-previous project
+		</div>
+	</a>
+</div>
+	<div class="photos">
+		<img src="styles/thenwhat1.jpg">
+		<img src="styles/thenwhat2.jpg">
+		<img src="styles/thenwhat3.jpg">
+		<img src="styles/thenwhat4.jpg">
+		<img src="styles/thenwhat5.jpg">
+		<img src="styles/thenwhat6.jpg">
+		<img src="styles/thenwhat8.jpg">
+		<img src="styles/thenwhat9.jpg">
+		<img src="styles/thenwhat10.jpg">
+
+
+
+	</div>
+	<div class="fulldescription">
+		<p class="medium">
+			year: 2017 <br>
+			medium: book <br>
+			paper, digital print
+
+		</p>
+		This publication is about conditions that
+we either live, used to live, or might have
+been living under. As it is about predictions,
+assumptions and law.
+it consists of 381 “if” statements taken
+from 20 books and articles that explore the
+subject of mobility and contemplate on it
+from different perspectives, whether that’s
+culture, politics, philosophy or simply
+one’s personal feelings.
+	</div>
+<script src="jquery/jquery.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script>
+
+var sticky = $('.fulldescription').offset().top;
+
+$(window).scroll(function() {  
+	var y = $(this).scrollTop();
+    if ($(window).scrollTop() > (sticky-140)) {
+        $('.fulldescription').addClass('affix');
+
+    }
+    else {
+        $('.fulldescription').removeClass('affix');
+    }  
+
+});
+// $(document).scroll(function () {
+//     var y = $(this).scrollTop();
+//     console.log(y);
+//     if (y > 700) {
+//         $('.buttons').fadeOut("fast");
+//     } else {
+//         $('.buttons').fadeIn("fast");
+//     }
+
+
+// });
+</script>
+
+
+</body>
+</html>
