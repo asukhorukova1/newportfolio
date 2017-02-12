@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<style>
+body {background-color: white;
+color: blue;}
+
+</style>
+</head>
+<body>
+<div class = "buttons">
+	<div class ="nametag">
+		Poster for Sexy Times exhibition
+	</div>
+	<a href="portfolio.html">
+		<div class ="back">
+				<-main page
+		</div>
+	</a>
+	<a href="competition.html">
+		<div class ="next">
+			next project->
+		</div>
+	</a>
+	<a href ="periphery.html">
+		<div class ="previous">
+				<-previous project
+		</div>
+	</a>
+</div>
+	<div class="photos">
+		<div class="smaller smallerposters" >
+				<img src="styles/sexytimes.png" >		
+		</div>
+
+
+
+
+
+
+
+
+
+
+	</div>
+	<div class="fulldescription">
+		<p class="medium">
+			year: 2016 <br>
+			medium: poster<br>
+			Photoshop, InDesign, risoprint
+
+		</p>
+		/in collaboration with Jan Egbers/<br>
+
+
+<script src="jquery/jquery.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script>
+
+var sticky = $('.fulldescription').offset().top;
+
+$(window).scroll(function() {  
+	var y = $(this).scrollTop();
+    if ($(window).scrollTop() > (sticky-140)) {
+        $('.fulldescription').addClass('affix');
+
+    }
+    else {
+        $('.fulldescription').removeClass('affix');
+    }  
+
+});
+// $(document).scroll(function () {
+//     var y = $(this).scrollTop();
+//     console.log(y);
+//     if (y > 700) {
+//         $('.buttons').fadeOut("fast");
+//     } else {
+//         $('.buttons').fadeIn("fast");
+//     }
+
+
+// });
+</script>
+
+
+</body>
+</html>
