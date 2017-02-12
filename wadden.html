@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<style>
+body {background-color: white;
+color: blue;}
+
+</style>
+</head>
+<body>
+<div class = "buttons">
+	<div class ="nametag">
+		Borderless States: Wadden Cohabitat
+	</div>
+	<a href="portfolio.html">
+		<div class ="back">
+				<-main page
+		</div>
+	</a>
+	<a href="band.html">
+		<div class ="next">
+			next project->
+		</div>
+	</a>
+	<a href ="hamlet.html">
+		<div class ="previous">
+				<-previous project
+		</div>
+	</a>
+</div>
+	<div class="photos">
+		<img src="styles/wad1.jpg">
+		<img src="styles/wad2.jpg">
+		<img src="styles/wad3.jpg">
+		<img src="styles/wad4.jpg">
+		<img src="styles/wad5.jpg">
+		<img src="styles/wad6.jpg">
+		<img src="styles/wad7.jpg">
+		<img src="styles/wad8.jpg">
+		<img src="styles/wad9.jpg">
+		<img src="styles/wad10.jpg">
+		<img src="styles/wad11.jpg">
+		<img src="styles/wad12.jpg">
+		<img src="styles/wad13.jpg">
+		<img src="styles/wad14.jpg">
+		<img src="styles/wad15.jpg">
+		<img src="styles/wad16.jpg">
+		<img src="styles/wad17.jpg">
+		<img src="styles/wad18.jpg">
+		<img src="styles/wad19.jpg">
+		<img src="styles/wad20.jpg">
+		<img src="styles/wad21.jpg">
+		<img src="styles/wad22.jpg">
+
+
+
+
+
+
+
+
+
+
+	</div>
+	<div class="fulldescription">
+		<p class="medium">
+			year: 2016 <br>
+			medium: book, video<br>
+			Digital print, video
+
+		</p>
+		Project made for the Borderless States exhibition at Waag Society, Amsterdam<br>
+		GPS 53.363854, 5.612542<br>
+		"Asya Sukhorukova, Dóra Kerekes and Jan Egbers explore the fringes of future habitation possibilities on the islands off the Dutch coasts. The group propose three different lifestyle scenarios based on the unique geography and conditions of three selected islands. Their research is based on the principles of arcology, an established field which seamlessly facilitates cohabitation of environment and architecture. It tinkers with the idea of the Wadden Islands becoming a viable escape once the Netherlands is overcrowded and inhabitable."<br>
+		<a href = "https://waag.org/en/news/what-do-borders-mean-interconnected-society"> Our project on the Waag Society website, featured for winning the "best research" nomination</a>
+
+
+<script src="jquery/jquery.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script>
+
+var sticky = $('.fulldescription').offset().top;
+
+$(window).scroll(function() {  
+	var y = $(this).scrollTop();
+    if ($(window).scrollTop() > (sticky-140)) {
+        $('.fulldescription').addClass('affix');
+
+    }
+    else {
+        $('.fulldescription').removeClass('affix');
+    }  
+
+});
+// $(document).scroll(function () {
+//     var y = $(this).scrollTop();
+//     console.log(y);
+//     if (y > 700) {
+//         $('.buttons').fadeOut("fast");
+//     } else {
+//         $('.buttons').fadeIn("fast");
+//     }
+
+
+// });
+</script>
+
+
+</body>
+</html>
