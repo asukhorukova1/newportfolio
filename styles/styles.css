@@ -203,9 +203,7 @@ font-size: 18px;
 	right: 0%;
 	padding-top:30px;
 	max-height:100%;
--webkit-column-width: 120px; /* Chrome, Safari, Opera */
-    -moz-column-width: 120px; /* Firefox */
-    column-width: 120px;
+	max-width:100%;
 }
 .indexnames li{
        -webkit-column-break-inside: avoid;
