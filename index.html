@@ -24,7 +24,22 @@ color: blue;}
 	</a>
 </div>
 	<div class="photos" id="note" >
-			<img src="styles/notessmall.jpg">
+		<img src="styles/notessmall.jpg">
+	</div>
+	<div class="photos" id="keyboards" >
+		<img src="styles/keyboardssmall.jpg">
+	</div>
+	<div class="photos" id="wadden" >
+		<img src="styles/wadsmall.jpg">
+	</div>
+	<div class="photos" id="sexyposter" >
+		<img src="styles/sexytimessmall.png">
+	</div>
+	<div class="photos" id="thenwhat" >
+		<img src="styles/thensmall.jpg">
+	</div>
+	<div class="photos" id="objectivity" >
+		<img src="styles/24small.jpg">
 	</div>
 	<div class="photos" id="band" >
 		<img src="styles/bandsmall.png">
@@ -318,6 +333,36 @@ color: blue;}
 
 
 $(function() {
+$('#indexkeyboards').hover(function() { 
+    $('#keyboards').fadeIn("fast"); 
+}, function() { 
+    $('#keyboards').fadeOut("fast"); 
+});
+});
+$('#indexwadden').hover(function() { 
+    $('#wadden').fadeIn("fast"); 
+}, function() { 
+    $('#wadden').fadeOut("fast"); 
+});
+});
+$('#indexthenwhat').hover(function() { 
+    $('#thenwhat').fadeIn("fast"); 
+}, function() { 
+    $('#thenwhat').fadeOut("fast"); 
+});
+});
+$('#indexsexyposter').hover(function() { 
+    $('#sexyposter').fadeIn("fast"); 
+}, function() { 
+    $('#sexyposter').fadeOut("fast"); 
+});
+});	
+$('#indexobjectivity').hover(function() { 
+    $('#objectivity').fadeIn("fast"); 
+}, function() { 
+    $('#objectivity').fadeOut("fast"); 
+});
+});			
 $('#indexnotes').hover(function() { 
     $('#note').fadeIn("fast"); 
 }, function() { 
