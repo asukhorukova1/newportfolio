@@ -188,15 +188,15 @@ font-size: 18px;
 .indexnames li:hover  {
 	color: black
 }
-#note,#band,#bauhaus,#wall, #ulysses, #beyonce,#drawing,#captionbot,#hamlet, #color,#frank,#panorama, #periphery,#tracewalk,#comp,#ineedto,#surrogate,#sex {
+#note,#band,#bauhaus,#wall, #ulysses, #beyonce,#drawing,#captionbot,#hamlet, #color,#frank,#panorama, #periphery,#tracewalk,#comp,#ineedto,#surrogate,#sex,#keyboards,#wadden, #thenwhat, #sexyposter {
 	top:10%;
 	position: fixed;
 	display: none;
 }
 .indexnames {
-    -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-	column-count: 3;
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+	column-count: 4;
 	font-family: 'Poppins', sans-serif;
 	font-size: 16px;
 	position:absolute;
