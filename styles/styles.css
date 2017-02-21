@@ -188,7 +188,7 @@ font-size: 18px;
 .indexnames li:hover  {
 	color: black
 }
-#note,#band,#bauhaus,#wall, #ulysses, #beyonce,#drawing,#captionbot,#hamlet, #color,#frank,#panorama, #periphery,#tracewalk,#comp,#ineedto,#surrogate,#sex,#keyboards,#wadden, #thenwhat, #sexyposter {
+#note,#band,#bauhaus,#wall, #ulysses, #beyonce,#drawing,#captionbot,#hamlet, #color,#frank,#panorama, #periphery,#tracewalk,#comp,#ineedto,#surrogate,#sex,#keyboards,#wadden, #thenwhat, #sexyposter,#objectivity {
 	top:10%;
 	position: fixed;
 	display: none;
