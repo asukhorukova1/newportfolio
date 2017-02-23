@@ -109,7 +109,7 @@ position: relative;
 	width: 24%;
 	height: auto;
 	right: 50%;
-	bottom: 50%;
+	top:10%;
 	margin: 25px 25px 25px 25px;
 	z-index: 20000;
 }
