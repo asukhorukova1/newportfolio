@@ -387,7 +387,9 @@ print,KABK,the Netherlands,Magazine,Book,Web,development,installation,art, visua
 		<script src="jquery.mousewheel.js"></script>
 		<script>
 		
-		window.location.replace("http://asuk.work");
+		$(document).load(function(){
+			window.location.replace("http://asuk.work");
+		})
 		
 			
 	$(document).scroll(function () {
